@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/video.css">
+	<title>Zoobombing in Portland</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+<!--
+        var togglers = document.getElementsByClassName("toggler");
+        var videos = document.getElementsByTagName("video");
+
+        function toggle_videos(id) {
+            var inh = togglers[id].innerHTML;
+            if (inh != '+')
+                {
+                    togglers[id].innerHTML = '+';
+                    videos[id].style.display = 'none';
+                    videos[id].pause();
+                }
+            else
+                {
+                    for (i = 0; i<videos.length; i++)
+                        {
+                            videos[i].style.display = ( id == i ) ? 'inline' : 'none';
+                            togglers[i].innerHTML = ( id == i ) ? '–' : '+';
+                            videos[i].pause();
+                        }
+                }
+        }
+//-->
+</script>
+    <header><br><h1><span class="hbg">Zoobombing in Portland</span></h1><br></header>
+	<nav id="nav_menu">
+    	<ul>
+    		<li><a href="../index.html">Home</a></li>
+    		<li><a href="#">Portland</a>
+            	<ul>
+                	<li><a href="http://www.weather.com/weather/today/l/USOR0275:1:US" target="_blank">Weather Forecast</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Portland,_Oregon" target="_blank">Wikipedia Article</a></li>
+                    <li><a href="http://www.ifc.com/shows/portlandia" target="_blank">Portlandia on IFC</a></li>
+					<li><a>Government</a>
+                    	<ul>
+                        	<li><a href="https://www.portlandoregon.gov/mayor/60970" target="_blank">Mayor's Office</a></li>
+                    		<li><a href="https://www.portlandoregon.gov/25999" target="_blank">Elected Officials</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="images.html">Gallery</a></li>
+    		<li><a href="video.html" class="current">Video</a></li>
+    		<li class="lastitem"><a href="http://bikeportland.org/" target="_blank">Bike Portland</a></li>
+    	</ul>
+    </nav>
+    <aside id="sidebarA">
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">
+						<figure>
+							<img src="../thumbs/zoobomb-logo.png" alt="Zoobomb logo" title="Zoobomb logo">
+							<figcaption>Zoobomb Home</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="images.html">
+						<figure>
+							<img src="../thumbs/blue-bike.png" alt="Painting of a bicycle" title="Gallery" class="roundit">
+							<figcaption>Gallery</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li>
+					<a href="video.html">
+						<figure>
+							<img src="../thumbs/TVcycle.jpg" alt="Photo of a TV on a bicycle" title="Video" class="roundit">
+							<figcaption>Video</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</nav>
+    </aside>
+    <main id="main">
+		<h2>Zoobombing in motion</h2>
+
+        <figure>
+            <span class="toggler" id="toggle1" onclick="toggle_videos(0)">–</span>
+            <figcaption>A musical montage of moments from the Zoobomb crew<br>(occasional coarse language!)</figcaption>
+            <video src="../media/zoobomb-fun.mp4" type="video/mp4" controls preload="auto"></video>
+        </figure>
+
+        <figure>
+            <span class="toggler" id="toggle2" onclick="toggle_videos(1)">+</span>
+            <figcaption>Zoobombing from the point of view of a helmet camera</figcaption>
+            <video src="../media/zoobomb-helmet-cam.mp4" type="video/mp4" controls preload="auto" style="display: none"></video>
+        </figure>
+
+        <figure>
+            <span class="toggler" id="toggle3" onclick="toggle_videos(2)">+</span>
+            <figcaption>Media coverage of the Zoobomb pile statue</figcaption>
+            <video src="../media/zoobomb-monument.mp4" type="video/mp4" controls preload="auto" style="display: none"></video>
+        </figure>
+
+	</main>
+    <aside id="sidebarB">
+		<h2>Video sources</h2>
+		<ul>
+			<li>
+				<a target="_blank" href="https://www.youtube.com/watch?v=M0g_YwfW1lQ">Zoobomb Fun</a> (Zoobomb YouTube channel, 2012)
+			</li>
+			<li>
+				<a target="_blank" href="https://www.youtube.com/watch?v=I4AHjCkXTqE">Zoobomb helmet camera footage</a><br>(radiohack's YouTube channel, 2008)
+			</li>
+			<li>
+				<a target="_blank" href="https://www.youtube.com/watch?v=YcVOS5FOJnA">KGW-TV coverage</a> (KGW-TV via Zoobomb YouTube channel, 2012)
+			</li>
+			<li>&nbsp;</li>
+		</ul>
+	</aside>
+
+    <footer>
+		<p>This site is not affiliated with the City of Portland nor any of the lovely individuals who live there.</p>
+	</footer>
+
+</body>
+
+
+</html>

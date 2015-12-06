@@ -1,0 +1,56 @@
+main h2{
+    margin-bottom: 0;
+}
+
+main figcaption {
+    font-style: italic;
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+
+main figure {
+    margin-top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888888;
+    text-align: center;
+    position: relative;
+}
+
+span.toggler {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    background: black;
+    width: 1em;
+    font-size: 80%;
+    border-radius: 2px;
+}
+
+video {
+    width: 95%;
+    height: auto;
+    border: 4px double black;
+    border-radius: 2px;
+}
+
+#sidebarB ul
+{
+	list-style: none;
+	padding: 0 0.5em;
+}
+#sidebarB ul li
+{
+	padding: 0.5em 0;
+	border-top: 1px solid black;
+}
+#sidebarB li a {
+    text-decoration: none;
+    color: #3359dd;
+}
+#sidebarB li a:hover {
+    background: #3359dd;
+    color: #f0f0f0;
+}
