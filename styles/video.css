@@ -23,10 +23,11 @@ span.toggler {
     top: 5px;
     left: 5px;
     color: white;
-    background: black;
+    background: #3359dd;
     width: 1em;
     font-size: 80%;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 video {

@@ -107,24 +107,6 @@ main {
     border-right: 2px solid black;
 }
 
-main figure.rail {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-main figure.rail img {
-	width: 80%;
-	border: 2px solid black;
-	border-radius: 10px;
-}
-
-main figure.rail figcaption {
-	font-size: 90%;
-	font-style: italic;
-}
-
 #sidebarB {
     width: 190px;
     min-height: 350px;     /* to give the sidebar some height
@@ -181,7 +163,7 @@ footer p {
 	left: -100%;
 	top: 0;
 }
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover > ul, #nav_menu ul li:focus > ul {
 	display: block;
 }
 #nav_menu > ul::after {
@@ -216,8 +198,8 @@ a {
 
 #nav_menu a:link, #nav_menu a:visited { color: black; }
 /* hover colour for first-level links */
-#nav_menu li:hover > a, #nav_menu li:focus > a { background-color: #cccccc; }
+#nav_menu li:hover > a, #nav_menu li > a:focus { background-color: #cccccc; }
 /* hover colour for second-level links */
-#nav_menu li li:hover > a, #nav_menu li li:focus > a { background-color: #acbad2; }
+#nav_menu li li:hover > a, #nav_menu li li > a:focus { background-color: #acbad2; }
 /* hover colour for third-level links */
-#nav_menu li li li:hover > a, #nav_menu li li li:focus > a { background-color: #cccccc; }
+#nav_menu li li li:hover > a, #nav_menu li li li > a:focus { background-color: #cccccc; }

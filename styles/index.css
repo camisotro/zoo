@@ -1,0 +1,36 @@
+main figure.rail {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+main figure.rail img {
+	width: 80%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+main figure.rail figcaption {
+	font-size: 90%;
+	font-style: italic;
+}
+
+#sidebarB ul
+{
+	list-style: none;
+	padding: 0 0.5em;
+}
+#sidebarB ul li
+{
+	padding: 0.5em 0;
+	border-top: 1px solid black;
+}
+#sidebarB li a {
+    text-decoration: none;
+    color: #3359dd;
+}
+#sidebarB li a:hover {
+    background: #3359dd;
+    color: #f0f0f0;
+}

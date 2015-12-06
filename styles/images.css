@@ -55,25 +55,6 @@ main li:hover figcaption span.hoverhide {
 	display: none;
 }
 
-#sidebarB ul
-{
-	list-style: none;
-	padding: 0 0.5em;
-}
-#sidebarB ul li
-{
-	padding: 0.5em 0;
-	border-top: 1px solid black;
-}
-#sidebarB li a {
-    text-decoration: none;
-    color: #3359dd;
-}
-#sidebarB li a:hover {
-    background: #3359dd;
-    color: #f0f0f0;
-}
-
 .clear {
 	clear: both;
 }
